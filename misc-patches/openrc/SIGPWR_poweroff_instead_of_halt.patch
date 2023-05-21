@@ -1,0 +1,13 @@
+diff --git a/src/openrc-init/openrc-init.c b/src/openrc-init/openrc-init.c
+index 2e6d367..73c2513 100644
+--- a/src/openrc-init/openrc-init.c
++++ b/src/openrc-init/openrc-init.c
+@@ -211,7 +211,7 @@ static void signal_handler(int sig)
+ #ifdef SIGPWR
+		case SIGPWR:
+ #endif
+-			handle_shutdown("shutdown", RB_HALT_SYSTEM);
++			handle_shutdown("shutdown", RB_POWER_OFF);
+			break;
+		case SIGCHLD:
+			reap_zombies();

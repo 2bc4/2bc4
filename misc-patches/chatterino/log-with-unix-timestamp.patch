@@ -1,0 +1,16 @@
+diff --git a/src/singletons/helper/LoggingChannel.cpp b/src/singletons/helper/LoggingChannel.cpp
+index 9f10f87c..8d375af3 100644
+--- a/src/singletons/helper/LoggingChannel.cpp
++++ b/src/singletons/helper/LoggingChannel.cpp
+@@ -101,9 +101,8 @@ void LoggingChannel::addMessage(MessagePtr message)
+         str.append("#" + message->channelName + " ");
+     }
+
+-    str.append('[');
+-    str.append(now.toString("HH:mm:ss"));
+-    str.append("] ");
++    str.append(QString::number(now.toMSecsSinceEpoch()));
++    str.append(" ");
+
+     QString messageSearchText = message->searchText;
+     if ((message->flags.has(MessageFlag::ReplyMessage) &&
