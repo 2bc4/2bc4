@@ -1,0 +1,10 @@
+[alias]
+br = "build --release"
+rr = "run --release"
+cl = "clean"
+
+[build]
+rustflags = "-C target-cpu=native"
+
+[cargo-new]
+vcs = "none"
