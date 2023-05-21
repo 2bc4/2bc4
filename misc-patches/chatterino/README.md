@@ -1,0 +1,2 @@
+- `log-with-unix-timestamp.patch` - Make moderation logs use unix timestamp
+- `twitch-hls-client-ui.patch` - Change some text containing Streamlink in the UI to twitch-hls-client

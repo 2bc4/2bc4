@@ -1,0 +1,1 @@
+- `SIGPWR_poweroff_instead_of_halt.patch` - Patch to make openrc-init poweroff with the tiny power button kernel driver 
