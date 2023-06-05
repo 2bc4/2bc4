@@ -1,0 +1,1 @@
+- `print-request-info.patch` - Tiny patch to print URL, headers and proxy settings of every request for debugging
